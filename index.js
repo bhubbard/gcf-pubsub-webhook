@@ -8,7 +8,7 @@ const pubsub_topic = process.env.PUBSUB_TOPIC;
 // Publish to Pub/Sub.
 exports.publish = async (req, res) => {
 
-  console.log( "Publishing message to topic ${'" +  pubsub_topic + "'}");
+  console.log( "Publishing to Pub/Sub Topic: " + pubsub_topic );
 
   // References an existing topic
   const topic = pubsub.topic( pubsub_topic );
