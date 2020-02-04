@@ -22,7 +22,7 @@ exports.publish = async (req, res) => {
   
   console.log( JSON.stringify(req.body) );
 
-  // Publishes a message
+  // Publishes a message.
   try {
     await topic.publish(messageBuffer);
     res.status(200).send('Webhook Successful.');
