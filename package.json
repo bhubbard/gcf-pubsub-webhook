@@ -4,31 +4,7 @@
   "private": true,
   "license": "Apache-2.0",
   "author": "Brandon Hubbard",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/GoogleCloudPlatform/nodejs-docs-samples.git"
-  },
-  "engines": {
-    "node": ">=8.0.0"
-  },
-  "scripts": {
-    "test": "mocha test/*.test.js --timeout=20000"
-  },
   "dependencies": {
-    "@google-cloud/pubsub": "^0.28.1"
-  },
-  "devDependencies": {
-    "@google-cloud/nodejs-repo-tools": "^3.3.0",
-    "child-process-promise": "^2.2.1",
-    "mocha": "^6.0.0",
-    "request": "^2.88.0",
-    "requestretry": "^4.0.0"
-  },
-  "cloud-repo-tools": {
-    "requiresKeyFile": true,
-    "requiresProjectId": true,
-    "requiredEnvVars": [
-      "FUNCTIONS_TOPIC"
-    ]
+    "@google-cloud/pubsub": "^1.4.1"
   }
 }
